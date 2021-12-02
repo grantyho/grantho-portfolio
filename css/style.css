@@ -415,6 +415,14 @@ a.skip{
     background-size: cover;
   }
 
+.three {
+    padding-bottom: 35px;
+}
+
+.three-top {
+    padding-top: 35px;
+}
+
 
   @media screen and (prefers-reduced-motion: reduce) {
     .parallax {
