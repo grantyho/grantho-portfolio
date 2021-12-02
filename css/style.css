@@ -61,6 +61,29 @@ li {
     list-style-type: none;
 }
 
+.typewriter h1 {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    width: 65%;
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 67% }
+  }
+  
+  /* The typewriter cursor effect */
+@keyframes blink-caret {    from, to { border-color: transparent }
+    50% { border-color: orange; }
+}
+  
+
 .blurb-text {
     color: #415F8F;
     font-size: 2em;
@@ -494,6 +517,8 @@ a.skip{
     .button {
         display: none;
     }
+
+    
 
 }
 
@@ -949,6 +974,10 @@ a.skip{
     .row-1 {
         margin-top: -25px;
     }
+
+    .typewriter h1 {
+        display: none;
+    }
     
 }
   
@@ -1052,6 +1081,10 @@ a.skip{
     
     .resume-2 {
         grid-column: 1 / span 3;
+    }
+
+    .typewriter h1 {
+        display: none;
     }
     
    
